@@ -1,3 +1,16 @@
-h1 {
-    color: blue;
+#inline span {
+    color: rgb(182, 23, 18);
+}   
+#ninlineblock span {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: 30px;
+    padding: 20px;
+    color: rgb(214, 17, 17);
+
+}
+#displaynone {
+    display: none;
 }
