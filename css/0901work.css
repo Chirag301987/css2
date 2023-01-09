@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.lital {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.header {
+    position: sticky;
+    border: 2px solid rgb(221, 167, 167);
+    top: 100px;
+    left: 300px;
+    max-width: 1200px;
+    padding: 10px;
+   
+}
+
+#logo {
+
+    float: left;
+    margin: auto;
+    border: 2px solid rgb(144, 199, 138);
+}
+
+#logo img {
+    width: 400px;
+    height: 150px;
+}
+
+nav {
+    float: right;
+    border: 2px solid rgb(138, 199, 143);
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 60px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+
+    #logo,
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.lorem {
+    position: relative;
+    top: 300px;
+    left: 30px;
+  
+}
+.button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background-color: blue;
+}
