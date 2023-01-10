@@ -1,0 +1,64 @@
+body {
+    background-image: url(../image/backgrund.jpg);
+    background-size: cover ;
+    background-position: center center;
+    background-color: rgba(0,0, 0,0.5);
+    background-blend-mode: multiply;
+    background-attachment: scroll;
+   
+}
+.box {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    
+}
+.image1 {
+    background-image: url(../image/01.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.image2 {
+    background-image: url(../image/02.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+.image3 {
+    background-image: url(../image/03.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+.image4 {
+    background-image: url(../image/04.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+.image5 {
+    width: 500px;
+    height: 500px;
+    background-image: url(../image/download.png);
+    background-repeat: no-repeat;
+    float: left;
+    background-color: aqua;
+    background-position: center center;
+    background-size: contain;
+
+}
+.data {
+    clear: both;
+    color: blueviolet;
+}
+.image6 {
+    width: 100vw;
+    height: 600px;
+    background-image: url(../image/cute-tree-branches-with-pink-flowers_1232-787.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    overflow: auto;
+    /* background-attachment: scroll; */
+    background-attachment: local;
+    /* background-attachment: fixed; */
+
+}
