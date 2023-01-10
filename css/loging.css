@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    width: 55%;
+    height: 550px;
+    margin: 50px auto;
+    background-color: rgb(235, 236, 217);
+    border-radius: 25px;
+}
+.data {
+    width: 50%;
+    margin-top: 40px;
+    float: left;
+    
+}
+.data h1 {
+    font-size: 45px;
+    color: brown;
+}
+.data img {
+    width: 50px;
+    margin: 0px 25px;
+}
+input {
+    height: 40px;
+    width: 60%;
+    padding: 15px;
+}
+button {
+    background-color: brown;
+    height: 40px;
+    width: 130px;
+    color: antiquewhite;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.image {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.sun {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/abstract-low-poly-banner-with-orange-light-shade_1017-24636.webp);
+    background-position: right center;
+    background-size: cover;
+    border-radius: 50% 25PX 25PX 50%;
+}
