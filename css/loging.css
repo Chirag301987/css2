@@ -3,18 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(243,225,226);
+}
 .login {
-    width: 55%;
-    height: 550px;
+    width: 75%;
+    height: 92vh;
     margin: 50px auto;
-    background-color: rgb(235, 236, 217);
-    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, .4);
+    
 }
 .data {
     width: 50%;
     margin-top: 40px;
     float: left;
-    
 }
 .data h1 {
     font-size: 45px;
@@ -38,15 +44,17 @@ button {
     font-size: 20px;
 }
 .image {
-    width: 50%;
-    height: 100%;
+    /* width: 50%;
+    height: 100%; */
     float: left;
 }
 .sun {
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    height: 1000px;
     background-image: url(../image/abstract-low-poly-banner-with-orange-light-shade_1017-24636.webp);
     background-position: right center;
     background-size: cover;
-    border-radius: 50% 25PX 25PX 50%;
+    border-radius: 50%;
+    top: -9%;
+    position: absolute;
 }
