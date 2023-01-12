@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/CaviarDreams-webfont.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/Caviar_Dreams_Bold-webfont.woff);
+    font-weight: bold;
+    font-style: normal;
+}
 body {
     background-color: rgb(243,225,226);
 }
@@ -15,33 +27,54 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, .4);
-    
+     
 }
 .data {
     width: 50%;
+    height: 100%;
     margin-top: 40px;
     float: left;
+    padding: 50px;
+    text-align: center;
+    font-family: CaviarDreams;
 }
-.data h1 {
-    font-size: 45px;
+.logo h1 {
     color: brown;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+.logo p {
+    margin-top: 30px;
+    color: gray;
+    font-size:28px;
 }
-.data img {
-    width: 50px;
-    margin: 0px 25px;
-}
-input {
-    height: 40px;
-    width: 60%;
+.logo a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid brown;
+    display: inline-block;
     padding: 15px;
+    margin: 25px;
+    transition: 0.5;
+    color: brown;
+    margin-bottom: 20px;
+    font-size: 40px;
+
 }
-button {
+.data a:hover {
     background-color: brown;
-    height: 40px;
-    width: 130px;
-    color: antiquewhite;
-    border-radius: 25px;
-    font-size: 20px;
+    color: #fff;
+}
+form input {
+    width: 65%;
+    height: 60px;
+    background-color: rgb(243,225,226);
+    outline: none;
+    padding: 20px;
+    border: none;
+    margin: 25px auto;
+    display: block
 }
 .image {
     /* width: 50%;
@@ -49,8 +82,8 @@ button {
     float: left;
 }
 .sun {
-    width: 1000px;
-    height: 1000px;
+    width: 1200px;
+    height: 1200px;
     background-image: url(../image/abstract-low-poly-banner-with-orange-light-shade_1017-24636.webp);
     background-position: right center;
     background-size: cover;
