@@ -20,3 +20,15 @@ h1 {
     width: 100%;
     background-color: rgb(181, 212, 202);
 }
+.FlexWarp {
+    flex-wrap: wrap;
+}
+.JustifyContent {
+    justify-content: center;
+}
+.JustifyContentspace {
+    justify-content: space-between;
+}
+.JustifyContentspacearound {
+    justify-content: space-around;
+}
