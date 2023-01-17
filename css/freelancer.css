@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.contenar {
+    max-width: 1700px;
+    margin: 40px auto;
+}
+h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+p {
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+.box {
+    display: flex;
+    flex: 0 0 500px;
+}
+.box p {
+    font-size: 25px;
+}
