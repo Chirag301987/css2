@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .contenar {
-    max-width: 80%;
+    max-width: 77%;
     margin: 40px auto;
 }
 h1 {
@@ -24,6 +24,7 @@ p {
 }
 h2 {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 .box p {
     font-size: 18px;
@@ -88,16 +89,31 @@ hr {
     width: 78px;
 }
 .parentcontrol {
-    margin: 50px 0;
+    margin: 50px 20px;
     line-height: 30px;
+
 }
 .parentcontrol p {
     font-size: 22x;
     line-height: 25px;
 }
 .imgmobil {
-    width: 40%;
+    width: 50%;
 }
-.imgmobil img {
-    /* padding: 0 50px 0 0 ; */
+.safe {
+    margin-top: 100px;
+    display: flex;
+}
+.safeimg img {
+    width: 70%;
+}
+.safedata {
+    width: 60%;
+}
+.secure {
+    display: flex;
+}
+.parentsecure p {
+    font-size: 22x;
+    line-height: 25px;
 }
