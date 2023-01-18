@@ -39,7 +39,7 @@ h2 {
 .howwork {
     padding: 50px 0;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 .howwork img {
     width: 100%;
@@ -60,4 +60,44 @@ button {
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 5px;
+    border: none;
+    font-weight: 50px;
+}
+hr {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(163, 155, 155);
+    margin: 0 auto;
+}
+.datacontrol {
+    width: 60%;
+}
+.datacontrol p {
+    font-size: 22px;
+    margin: 8px 0;
+}
+.control {
+    display: flex;
+    flex: 0 0 30%
+}
+.howworkdatacontrol {
+    width: 50%;
+    display: flex;
+}
+.parentcontrol img {
+    width: 78px;
+}
+.parentcontrol {
+    margin: 50px 0;
+    line-height: 30px;
+}
+.parentcontrol p {
+    font-size: 22x;
+    line-height: 25px;
+}
+.imgmobil {
+    width: 40%;
+}
+.imgmobil img {
+    /* padding: 0 50px 0 0 ; */
 }
