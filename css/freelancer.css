@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .contenar {
-    max-width: 1700px;
+    max-width: 80%;
     margin: 40px auto;
 }
 h1 {
@@ -20,8 +20,28 @@ p {
 }
 .box {
     display: flex;
-    flex: 0 0 500px;
+    flex: 0 0 33%;
+}
+h2 {
+    margin-bottom: 10px;
 }
 .box p {
-    font-size: 25px;
+    font-size: 18px;
+}
+.parent img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+.parent {
+    margin: 15px;
+    line-height: 30px;
+}
+.howwork {
+    padding: 50px 0;
+    display: flex;
+}
+.howwork img {
+    width: 50%;
+    height: 100%;
+    padding: 25px;
 }
