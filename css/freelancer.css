@@ -52,7 +52,7 @@ h2 {
 }
 .data p {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
     margin-bottom: 50px;
 }
 button {
@@ -95,7 +95,7 @@ hr {
 }
 .parentcontrol p {
     font-size: 22x;
-    line-height: 25px;
+    line-height: 30px;
 }
 .imgmobil {
     width: 50%;
@@ -105,15 +105,50 @@ hr {
     display: flex;
 }
 .safeimg img {
-    width: 70%;
+    width: 75%;
 }
 .safedata {
-    width: 60%;
+    width: 75%;
+}
+.safedata p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.safedata h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 .secure {
     display: flex;
+    gap: 20px;
 }
 .parentsecure p {
     font-size: 22x;
-    line-height: 25px;
+    line-height: 30px;
+}
+.parentsecure img {
+    width: 80px;
+    margin-bottom: 40px;
+}
+.wait {
+    width: 100%;
+    background-color: rgb(27, 27, 48);
+    color: #fff;
+    padding: 70px 200px;
+}
+.wait h1 {
+    margin-bottom: 30px;
+}
+.wait p {
+    margin-bottom: 50px;
+}
+.checkout {
+    margin-top: 100px;
+}
+.checkout h1 {
+    margin-bottom: 30px;
+}
+.checkout p {
+    font-size: 26px;
 }
