@@ -7,48 +7,50 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .contenar {
-    max-width: 77%;
-    margin: 40px auto;
+    max-width: 1295px;
+    margin: 105px auto;
 }
-h1 {
+.contenar h2 {
     font-size: 45px;
-    margin-bottom: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
-p {
-    font-size: 30px;
-    margin-bottom: 70px;
+.contenar p {
+    font-size: 26px;
+    font-weight: 500;
 }
 .box {
+    margin-top: 55px;
     display: flex;
-    flex: 0 0 33%;
-}
-h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-.box p {
-    font-size: 18px;
-}
-.parent img {
-    width: 90px;
-    margin-bottom: 20px;
 }
 .parent {
-    margin: 15px;
+    width: 34.33%;
+    padding: 0 20px 0 0;
+}
+h3 {
+    font-size: 22px;
+}
+.parent p {
+    margin-top: 7px;
+    font-size: 20px;
+}
+.parent img {
+    width: 86px;
+    margin-bottom: 8px;
+}
+.parent {
     line-height: 30px;
 }
 .howwork {
-    padding: 50px 0;
     display: flex;
-    gap: 40px;
+    gap: 95px;
 }
 .howwork img {
-    width: 100%;
-  
+    width: 600px;
 }
 .data {
-    width: 100%;
-    padding: 30px 60px;
+    width: 600px;
+    /* padding: 30px 40px; */
 }
 .data p {
     font-size: 18px;
@@ -70,17 +72,17 @@ hr {
     background-color: rgb(163, 155, 155);
     margin: 0 auto;
 }
-.datacontrol {
+/* .datacontrol {
     width: 60%;
-}
-.datacontrol p {
+} */
+/* .datacontrol p {
     font-size: 22px;
     margin: 8px 0;
-}
-.control {
+} */
+/* .control {
     display: flex;
     flex: 0 0 30%
-}
+} */
 .howworkdatacontrol {
     width: 50%;
     display: flex;
@@ -133,7 +135,7 @@ hr {
 }
 .wait {
     width: 100%;
-    background-color: rgb(27, 27, 48);
+    background-color: #1f2836;
     color: #fff;
     padding: 70px 200px;
 }
