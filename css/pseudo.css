@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.custome ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+.custome ul li::before {
+    content: '*';
+    padding: 2px 3px;
+    margin: 10px;
+    background-color:red;
+    margin-bottom: 20px;
+}  
+
+.customee ul li {
+    margin-bottom: 50px;
+    list-style: none;
+    font-size: 30px;
+    position: relative;
+}
+.customee ul li::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+}
+.customee ul li:first-child:before {
+    background: url(../image/homeicon.jpg);
+    background-size: 100%;
+}
+.customee ul li:nth-child(2):before {
+    background: url(../image/producticon.png);
+    background-size: 100%;
+}
+.mainbox {
+    width: 70%;
+    height: 700px;
+    margin: 20px auto;
+    border: 2px solid red;
+    display: flex;
+    position: relative;
+}
+.box1, .box2 {
+    width: 50%;
+    height: 700px;
+    border: 2px solid green;
+}
+.box1 {
+    background: linear-gradient(to right,rgba(0 0 0 /.6) , rgba(0 0 0 /.2)), url(../image/cascade-boat-clean-china-natural-rural.jpg);
+    background-size: cover;
+}
