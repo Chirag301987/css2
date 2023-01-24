@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenar {
+    margin: 10px auto;
+    max-width: 1200px;
+}
+.scale img {
+    width: 300px;
+    height: 300px
+}
+.scale img:hover{
+    transform: scale(10px);
+   
+}
