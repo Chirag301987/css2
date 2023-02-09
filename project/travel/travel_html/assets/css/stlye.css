@@ -24,7 +24,6 @@ img {
 .container {
     max-width: 137rem;
     margin: 0 auto;
-    background-color:#CFCFCF ;
 }
 .row {
     display: flex;
@@ -66,25 +65,53 @@ img {
 .col-12 {
     width: 100%;
 }
-****HEADER****
+/* ****HEADER**** */
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+#dark-headr {
+    background-color: #020202;
+    padding: 2rem;
+}
 header .row {
     justify-content: space-between;
     align-items: center;
+    padding-top: 5rem;
 }
-header .row li {
+header nav li {
     list-style: none;
     display: inline-block;
 }
-header .row li a {
+header nav li a {
     color: var(--secondary-color);
     margin: 0 3.3rem;
     font-size: 1.8rem;
+    font-weight: 500;
 }
 header .row a {
     color: var(--secondary-color);
     font-size: 1.8rem;
     margin-right: 3.3rem;
 }
+/* ************** */
+/* ****hero**** */
+#hero {
+    background-image: url(../images/happy-couple-tourist-hand-pointing-copy-space-with-baggage-going-travel-holidays.jpg);
+    width: 100%;
+    height: 100rem;
+    background-position: center center;
+    background-size: cover;
 
+}
+@media screen and (max-width 1250px) {
+    header nav li a {
+        margin: 0 1rem;
+    }
+header .row {
+    
+}
 
-***************
+}
