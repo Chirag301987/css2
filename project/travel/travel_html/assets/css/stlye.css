@@ -75,17 +75,23 @@ header {
     transition: all 0.5s;
     z-index: 9;
 }
-/* #dark-headr {
+.dark-header {
     background-color: #020202;
-    padding: 2rem;
-} */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 header .row {
     justify-content: space-between;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2rem 0;
 }
-header nav li {
-    list-style: none;
+header .row nav {
+    margin-left: auto;
+}
+header .row nav ul {
+    list-style-type: none;
+}
+header .row nav ul li {
+    position: relative;
     display: inline-block;
 }
 header nav li a {
@@ -94,10 +100,13 @@ header nav li a {
     font-size: 1.8rem;
     font-weight: 500;
 }
-header .row a {
+header .row>a i {
     color: var(--secondary-color);
     font-size: 1.8rem;
     margin-right: 3.3rem;
+}
+header .row nav ul li a:hover {
+    background-color: #9B9B9B;
 }
 /* ************** */
 /* ****hero**** */
@@ -107,4 +116,84 @@ header .row a {
     height: 100rem;
     background-position: center center;
     background-size: cover;
+}
+/* **************** */
+/* ******** why ****** */
+#why_selected {
+    background-image: url(../images/why.jpg);
+    background-size: 100% 50rem;
+    background-position: center center;
+}
+
+
+/* **************** */
+@media screen and (max-width:1250px) {
+    header .row nav ul li a {
+        padding: 1.3rem;
+    }
+    header .logo {
+        width: 18rem;
+    }
+    header .row>a i {
+        padding-left: 1.3rem;
+    }
+}
+@media screen and (max-width:992px) {
+    header nav>ul {
+        position: absolute;
+        top: 1rem;
+        right: -35%;
+        width: 35%;
+        height: 100vh;
+        transition: all 0.5s;
+        background-color: grey;
+    }
+    header .row nav ul li {
+        display: block;
+        width: 100%;
+
+    }
+    header .row nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    header .row nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header nav ul li ul li a {
+        padding-left: 6rem;
+    }
+    header.row nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header .row .logo {
+        order: 0;
+    }
+    header .row nav {
+        order: 2;
+    }
+    header .row .search {
+        order: 1;
+        position: absolute;
+        right: 40%;
+    }
+    header .row nav ul>i {
+        color: #ECECEC;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding-right: 1.8rem;
+    }
+    header .row nav>i {
+        display: inline-block !important;
+    }
+    .showHide {
+        right: 0%;
+    }
 }
