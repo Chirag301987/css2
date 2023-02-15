@@ -24,6 +24,7 @@ img {
 .container {
     max-width: 137rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 .row {
     display: flex;
@@ -71,11 +72,13 @@ header {
     left: 0;
     right: 0;
     width: 100%;
+    transition: all 0.5s;
+    z-index: 9;
 }
-#dark-headr {
+/* #dark-headr {
     background-color: #020202;
     padding: 2rem;
-}
+} */
 header .row {
     justify-content: space-between;
     align-items: center;
@@ -104,14 +107,4 @@ header .row a {
     height: 100rem;
     background-position: center center;
     background-size: cover;
-
-}
-@media screen and (max-width 1250px) {
-    header nav li a {
-        margin: 0 1rem;
-    }
-header .row {
-    
-}
-
 }
