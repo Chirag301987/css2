@@ -74,6 +74,7 @@ header {
     width: 100%;
     transition: all 0.5s;
     z-index: 9;
+    padding: 2rem 0;
 }
 .dark-header {
     background-color: #020202;
@@ -82,7 +83,6 @@ header {
 header .row {
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem 0;
 }
 header .row nav {
     margin-left: auto;
@@ -100,13 +100,16 @@ header nav li a {
     font-size: 1.8rem;
     font-weight: 500;
 }
+.contaner .row a {
+    margin-left: 2rem;
+}
 header .row>a i {
     color: var(--secondary-color);
     font-size: 1.8rem;
     margin-right: 3.3rem;
 }
 header .row nav ul li a:hover {
-    background-color: #9B9B9B;
+    color: #c82121;
 }
 /* ************** */
 /* ****hero**** */
@@ -178,10 +181,12 @@ header .row nav ul li a:hover {
 /* **************** */
 /* ******** Explorer ****** */
 
+#Explore {
+    margin: 18rem 0;
+}
 .maintitle h2 {
     color: #020202;
     text-align: center; 
-    padding-top: 17.8rem;
     font-weight: 600;
     font-size: 6rem;
     line-height: 7rem;     
@@ -190,7 +195,7 @@ header .row nav ul li a:hover {
 .maintitle p {
     color: #878787;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.8rem;
     line-height: 3.6rem; 
     margin-bottom: 8.4rem;
@@ -199,6 +204,10 @@ header .row nav ul li a:hover {
 /* **************** */
 
 /* ******** why ****** */
+#why_selected .contaner h2 {  
+    padding-top: 2.8rem;
+    margin-bottom: 0.6rem;
+}
 #why_selected {
     background-image: url(../images/why.jpg);
     background-size: 100% 50rem;
@@ -207,13 +216,24 @@ header .row nav ul li a:hover {
 }
 #why_selected .maintitle h2 {
     color: var(--secondary-color);
-    margin-top: 2.6rem;
 }
 #why_selected .maintitle p {
     color: var(--secondary-color);
-    padding-top: 0.6rem;
 }
 
+/* **************** */
+/* *** partner ***** */
+#partner .contaner {
+    width:114rem;
+    height:28rem;
+    margin: 18rem auto;
+}
+#partner .contaner h2 {
+    margin-bottom: 1rem;
+}
+#partner .par_logo img {
+    margin-top: -2rem;
+}
 
 /* **************** */
 @media screen and (max-width:1250px) {
