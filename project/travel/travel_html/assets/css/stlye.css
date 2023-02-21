@@ -367,6 +367,9 @@ header .row nav ul>i {
 /* **************** */
 
 /* ******** why ****** */
+#why_selected .contaner {
+    max-width: 137rem;
+}
 #why_selected .contaner h2 {  
     padding-top: 2.8rem;
     margin-bottom: 0.6rem;
@@ -379,13 +382,13 @@ header .row nav ul>i {
     overflow: hidden;
     margin-bottom: 17rem;
 }
-#why_selected .maintitle h2 {
+#why_selected .contaner .maintitle h2 {
     color: var(--secondary-color);
 }
-#why_selected .maintitle p {
+#why_selected .contaner .maintitle p {
     color: var(--secondary-color);
 }
-.why-slider .swiper-wrapper{
+.why-slider.swiper-wrapper{
     padding-bottom: 3rem;
  }
 .why-slider .swiper-slide {
@@ -438,12 +441,12 @@ header .row nav ul>i {
     display: inline-block;
 }
 
-.why-select-folder {
+.contaner .why-select-folder {
     position: relative;
     margin: 0 4rem;
 }
-.why-select-arrow .prev1,
-.why-select-arrow .next1 {
+.contaner .why-select-arrow .prev1,
+.contaner .why-select-arrow .next1 {
     z-index: 8;
     position: absolute;
     top: -7rem;
@@ -608,7 +611,7 @@ header .row nav ul>i {
     color: #737373;
 }
 /* **************** */
-@media screen and (max-width:1250px) {
+/* @media screen and (max-width:1250px) {
     header .row nav ul li a {
         padding: 1.3rem;
     }
@@ -677,4 +680,47 @@ header .row nav ul>i {
     .showHide {
         right: 0%;
     }
+} */
+/* @media screen and (max-width:1440px) {
+
+} */
+@media screen and (max-width:1365px) {
+    .container {
+    max-width: 136rem;
+    padding: 0px 3rem;
+    }
+    .herodata h1 {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+    header nav li a {
+        margin: 0 2rem;
+        font-size: 1.8rem;
+    }
+    .herodata .searchform {
+        width: 62rem;
+        height: 7rem;
+    }
+    #Explore {
+        margin: 15rem 0 10rem;
+    }
+    .maintitle h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 1rem;
+    }
+    .maintitle p {
+        font-size: 1.9rem;
+        line-height: 1.6rem;
+        margin-bottom: 8rem;
+    }
+    .explore-arrow .prev, .explore-arrow .next {
+        width: 5rem;
+        height: 4.6rem;
+        font-size: 2rem;
+        line-height: 4.5rem;
+    }
 }
+
+
+
