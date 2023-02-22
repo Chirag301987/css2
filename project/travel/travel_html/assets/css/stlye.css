@@ -367,10 +367,11 @@ header .row nav ul>i {
 /* **************** */
 
 /* ******** why ****** */
-#why_selected .contaner {
+/* #why_selected .contaner {
     max-width: 137rem;
-}
-#why_selected .contaner h2 {  
+    margin: 0 auto;
+} */
+#why_selected .container h2 {  
     padding-top: 2.8rem;
     margin-bottom: 0.6rem;
 }
@@ -382,10 +383,10 @@ header .row nav ul>i {
     overflow: hidden;
     margin-bottom: 17rem;
 }
-#why_selected .contaner .maintitle h2 {
+#why_selected .container .maintitle h2 {
     color: var(--secondary-color);
 }
-#why_selected .contaner .maintitle p {
+#why_selected .container .maintitle p {
     color: var(--secondary-color);
 }
 .why-slider.swiper-wrapper{
@@ -441,12 +442,12 @@ header .row nav ul>i {
     display: inline-block;
 }
 
-.contaner .why-select-folder {
+.container .why-select-folder {
     position: relative;
     margin: 0 4rem;
 }
-.contaner .why-select-arrow .prev1,
-.contaner .why-select-arrow .next1 {
+.why-select-folder .why-select-arrow .prev1,
+.why-select-folder .why-select-arrow .next1 {
     z-index: 8;
     position: absolute;
     top: -7rem;
@@ -530,7 +531,7 @@ header .row nav ul>i {
     padding: 5rem 5.4rem 5.1rem 5.3rem;
 }
 .our-client-slider .swiper-wrapper{
-    padding-top: 7rem;
+    padding-top: 11rem;
     padding-bottom: 5rem;
 }
 .our-client-slider .swiper-slide .client-img img {
@@ -557,7 +558,7 @@ header .row nav ul>i {
 .our-client-slider .swiper-slide .client-data p {
     font-weight: 500;
     font-size: 1.8rem;
-    line-height: 2.8rem;
+    line-height: 0.001rem;
     color: #858585;
 }
 .our-client-slider .swiper-slide .client-data a {
@@ -611,18 +612,8 @@ header .row nav ul>i {
     color: #737373;
 }
 /* **************** */
-/* @media screen and (max-width:1250px) {
-    header .row nav ul li a {
-        padding: 1.3rem;
-    }
-    header .logo {
-        width: 18rem;
-    }
-    header .row>a i {
-        padding-left: 1.3rem;
-    }
-}
-@media screen and (max-width:992px) {
+
+/* @media screen and (max-width:992px) {
     header nav>ul {
         position: absolute;
         top: 1rem;
@@ -680,10 +671,18 @@ header .row nav ul>i {
     .showHide {
         right: 0%;
     }
-} */
-/* @media screen and (max-width:1440px) {
+}  */
+@media screen and (max-width:1440px) {
+    .why-select-arrow .prev1 {
+        left: -7rem;
+    }
+    
+    .why-select-arrow .next1 {
+        right: -7rem;
+    }
+    
 
-} */
+}
 @media screen and (max-width:1365px) {
     .container {
     max-width: 136rem;
@@ -710,8 +709,8 @@ header .row nav ul>i {
         margin-bottom: 1rem;
     }
     .maintitle p {
-        font-size: 1.9rem;
-        line-height: 1.6rem;
+        font-size: 1.7rem;
+        line-height: 5rem;
         margin-bottom: 8rem;
     }
     .explore-arrow .prev, .explore-arrow .next {
@@ -720,7 +719,61 @@ header .row nav ul>i {
         font-size: 2rem;
         line-height: 4.5rem;
     }
+    .why-select-folder .why-select-arrow .prev1, .why-select-folder .why-select-arrow .next1 {
+        top: -7rem;
+        width: 5rem;
+        height: 4.6rem;
+        font-size: 2rem;
+        line-height: 4.5rem;
+    }
+    .why-select-arrow .prev1 {
+        left: -5rem;
+    }
+    
+    .why-select-arrow .next1 {
+        right: -5rem;
+    }
+    .why-slider .why-data p {
+        font-size: 1.7rem;
+    }
+    .client-container .client-say p {
+        font-size: 1.7rem;
+    }
+    .client-container {
+        padding: 0 0 0 4rem;
+    }
+    .our-client-arrow .prev2, .our-client-arrow .next2 {
+        width: 5rem;
+        height: 4.6rem;
+        font-size: 2rem;
+        line-height: 4.5rem;
+    }
+    .our-client-slider .swiper-slide .client-data>p {
+        font-size: 1.7rem;
+    }
+    .our-client-arrow .prev2 {
+        right: 11rem;
+    }
+    .our-client-slider .swiper-slide .client-data p {
+        font-size: 1.7rem;
+    }
 }
-
-
+@media screen and (max-width:1199px) {
+    .maintitle p {
+        line-height: 3rem;
+        margin-bottom: 6rem;
+    }
+    #partner .tour-partner {
+        padding-top: 4.9rem;
+    }
+    #partner .par_logo img {
+        max-width: 80%;
+    }
+    .client-container {
+        padding: 0 0 0 12rem;
+    }
+}
+@media screen and (max-width:991px) {
+    
+}
 
