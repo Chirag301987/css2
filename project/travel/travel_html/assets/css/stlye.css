@@ -939,6 +939,63 @@ header .row nav ul>i {
     }
 }
 @media screen and (max-width:991px) {
-    
+    header nav>ul {
+        position: absolute;
+        top: 1rem;
+        right: -35%;
+        width: 35%;
+        height: 100vh;
+        transition: all 0.5s;
+        background-color: grey;
+    }
+    header .row nav ul li {
+        display: block;
+        width: 100%;
+
+    }
+    header .row nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    header .row nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header nav ul li ul li a {
+        padding-left: 6rem;
+    }
+    header.row nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header .row .logo {
+        order: 0;
+    }
+    header .row nav {
+        order: 2;
+    }
+    header .row .search {
+        order: 1;
+        position: absolute;
+        right: 40%;
+    }
+    header .row nav ul>i {
+        color: #ECECEC;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding-right: 1.8rem;
+    }
+    header .row nav>i {
+        display: inline-block !important;
+    }
+    .showHide {
+        right: 0%;
+    }
+}
 }
 
