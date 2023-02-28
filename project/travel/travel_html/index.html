@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/stlye.css">
@@ -54,7 +54,7 @@
         <section id="hero">
             <div class="container">
                 <div class="herodata">
-                    <h1>Make in 
+                    <h1 class="wow animate__animated animate__flash animate__slow animate__faster animate__infinite">Make in 
                         <br> your journey.
                     </h1>
                     <p>Explore the world with what you love beautiful 
@@ -85,6 +85,7 @@
                             <option value="5">5</option>
                             <option value="6">6</option>
                         </select>
+                        
                         <input type="button" value="Explore Now" class="explore">
                     </form>
                     <p> 
@@ -99,11 +100,11 @@
     <section id="Explore">
         <div class="container">
             <div class="maintitle">
-                <h2>
+                <h2 class="wow animate__animated animate__zoomIn animate__slow animate__faster ">
                     Explore new worlds with <br>
                     exotic natural scenery
                 </h2>
-                <p>
+                <p class="wow animate__animated animate__shakeX animate__slow animate__faster ">
                     Explore the world with what you love beautiful natural beauty.
                 </p>
             </div>
@@ -118,7 +119,7 @@
                 </div>
                 <div class="swiper explore-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide wow animate__animated animate__bounceInLeft animate__slow animate__faster ">
                             <div class="card-img">
                                 <img src="./assets/images/why.jpg" alt="">
                             </div>
@@ -130,7 +131,7 @@
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide wow animate__animated animate__bounceInDown animate__slow animate__faster ">
                             <div class="card-img">
                                 <img src="./assets/images/smiley-woman-posing-her-baggage.jpg" alt="">
                             </div>
@@ -142,7 +143,7 @@
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide wow animate__animated animate__bounceInRight animate__slow animate__faster ">
                             <div class="card-img">
                                 <img src="./assets/images/men-stand-watch-mountains-tropical-forests-with-backpacks-forest-adventure-traveling-climbing.jpg" alt="">
                             </div>
@@ -235,7 +236,7 @@
     <section id="why_selected">
         <div class="container">
             <div class="maintitle">
-                <h2>
+                <h2 class="wow animate__animated animate__zoomIn animate__slow animate__faster ">
                     Why choose Us?
                 </h2>
                 <p>
@@ -352,7 +353,7 @@
     <section id="partner">
         <div class="contaner">
             <div class="maintitle">
-                <h2>
+                <h2 class="wow animate__animated animate__zoomIn animate__slow animate__faster ">
                     Our tour partner
                 </h2>
                 <p>
@@ -362,19 +363,19 @@
                 </p>
             </div>
             <div class="tour-partner">
-                <div class="tour-img">
+                <div class="tour-img wow animate__animated animate__heartBeat animate__slow animate__faster">
                     <img src="./assets/images/partner logo/Katana.png" alt="">
                 </div>
-                <div class="tour-img">
+                <div class="tour-img wow animate__animated animate__heartBeat animate__slow animate__faster">
                     <img src="./assets/images/partner logo/travava.png" alt="">
                 </div>
-                <div class="tour-img">
+                <div class="tour-img wow animate__animated animate__heartBeat animate__slow animate__faster">
                     <img src="./assets/images/partner logo/bigui.png" alt="">
                 </div>
-                <div class="tour-img">
+                <div class="tour-img wow animate__animated animate__heartBeat animate__slow animate__faster">
                     <img src="./assets/images/partner logo/Booking.com.png" alt="">
                 </div>
-                <div class="tour-img">
+                <div class="tour-img wow animate__animated animate__heartBeat animate__slow animate__faster">
                     <img src="./assets/images/partner logo/Jakmaen.png" alt="">
                 </div>
             </div>
@@ -386,7 +387,7 @@
         <div class="client-container">
             <div class="client-say">
                 <p><span>TESTIMONIAL</span></p>
-                <h2>What our client say</h2>
+                <h2 class="wow animate__animated animate__zoomIn animate__slow animate__faster ">What our client say</h2>
                 <p>Create a visual identity for your company and a <br> overall brand</p>
             </div>
 
@@ -609,7 +610,7 @@
     <section id="subscribe">
         <div class="container">
             <div class="main-title">
-                <h2>Subcribe to get special price</h2>
+                <h2 class="wow animate__animated animate__zoomIn animate__slow animate__faster ">Subcribe to get special price</h2>
                 <p>Dont wanna miss something? subscribe right now and get special <br> promotion and monthly newsletter
                 </p>
             </div>
@@ -673,6 +674,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
      <script>
         window.onscroll = function () {
@@ -776,6 +782,10 @@
                 },
             },
         });
+    </script>
+
+    <script>
+        new WOW().init();
     </script>
 
     
