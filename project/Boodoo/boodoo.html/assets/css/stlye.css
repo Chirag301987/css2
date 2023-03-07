@@ -29,3 +29,24 @@ img {
 }
 
 /* *********** */
+
+
+
+
+
+
+/* ******************* */
+@media screen and (min-width:1500px) {
+    .container {
+        max-width: 150rem;
+        padding: 0 1rem;
+    }
+    
+}
+@media screen and (min-width:1700px) {
+    .container {
+        max-width: 170rem;
+        padding: 0 1rem;
+    }
+    
+}
