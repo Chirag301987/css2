@@ -3,33 +3,119 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family:'Alegreya';
-    background-color: aquamarine;
+    font-family: 'Alegreya';
 }
+
 html {
     font-size: 62.5%;
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
+
 /* ***Header*** */
+
 .main-header {
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+}
+
+.main-header ul {
+    display: flex;
+}
+
+.main-header ul li a {
+    margin-right: 5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+.main-header ul li:last-child a {
+    margin-right: 0;
+}
+
+.main-header ul li a:hover {
+    color: #C8191C;
 }
 
 /* *********** */
+#hero {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: relative;
+}
 
+
+#hero::before {
+    content: '';
+    background-image: url(../images/hero.png);
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    background-size: 100% auto ;
+
+}
+
+.hero-data {
+    padding: 40rem 0 0;
+    text-align: center;
+    z-index: 99;
+    position: relative;
+}
+
+.hero-data h1 {
+    font-weight: 700;
+    font-size: 13rem;
+    line-height: 16rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-data span {
+    color: #C8191C;
+}
+
+.hero-data p {
+    padding: 5rem 45rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hero-data a {
+    margin: 0 auto;
+}
+.button_hero {
+    background-color: #C8191C;
+    padding: 1.5rem 7rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
 
 
 
@@ -40,13 +126,16 @@ img {
     .container {
         max-width: 150rem;
         padding: 0 1rem;
+        margin: 0 auto;
     }
-    
+
 }
+
 @media screen and (min-width:1700px) {
     .container {
         max-width: 170rem;
         padding: 0 1rem;
+        margin: 0 auto;
     }
-    
+
 }
