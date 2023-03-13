@@ -24,23 +24,31 @@ img {
     max-width: 100%;
     display: block;
 }
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
 
 /* ***Header*** */
-
+header {
+    padding-top: 4rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+}
 .main-header {
-    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 9;
-    margin: 0 auto;
 }
-
 .main-header ul {
     display: flex;
 }
-
 .main-header ul li a {
     margin-right: 5rem;
     font-weight: 700;
@@ -48,11 +56,9 @@ img {
     line-height: 2.4rem;
     color: #FFFFFF;
 }
-
 .main-header ul li:last-child a {
     margin-right: 0;
 }
-
 .main-header ul li a:hover {
     color: #C8191C;
 }
@@ -61,13 +67,13 @@ img {
 #hero {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
     width: 100%;
-    height: 100vh;
     top: 0;
     left: 0;
     position: relative;
+    display: flex;
+    background-position: center center;
+    background-size: cover;
 }
-
-
 #hero::before {
     content: '';
     background-image: url(../images/hero.png);
@@ -75,11 +81,11 @@ img {
     inset: 0;
     opacity: 0.08;
     background-size: 100% auto ;
-
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-
 .hero-data {
-    padding: 40rem 0 0;
+    margin-bottom: 30rem;
     text-align: center;
     z-index: 99;
     position: relative;
@@ -89,8 +95,8 @@ img {
     font-weight: 700;
     font-size: 13rem;
     line-height: 16rem;
-    text-align: center;
     color: #FFFFFF;
+    margin-top: 30rem;
 }
 
 .hero-data span {
@@ -116,6 +122,150 @@ img {
     font-size: 2.4rem;
     color: #FFFFFF;
 }
+/***DISCOVER***/
+#discover {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+    width: 100%;
+}
+.discover-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17.2rem;
+}
+.discover-icons h3 {
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main-title h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+.main-title h2 {
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.discover-with p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 12rem;
+}
+.discover-with h5 {
+    margin-top: 2.8rem;
+}
+.with-img img {
+    width: 72.9rem;
+    height: 50.6rem;
+    object-position: center center;
+    object-fit: cover;
+}
+.with-data {
+    padding-left: 15rem;
+    position: relative;
+}
+.with-data::before {
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 46rem;
+    border: 1px solid #FFF;
+    left: 3rem;
+    top: 3.8rem;
+}
+.with-data .btn-theme {
+    margin-top: 10rem;
+    display: inline-block;
+}
+/**********/
+
+/***SUPER***/
+#super {
+    padding: 20rem 0;
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+}
+#super h2 {
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 19.1rem;
+    color: #FFFFFF;
+}
+#super p {
+    max-width: 48.5rem;
+    padding-top: 11.5rem;
+}
+.team-imgs {
+    padding-bottom: 10.4rem;
+    padding-left: 8.8rem;
+}
+/**********/
+
+#service {
+    background: linear-gradient(0deg, #000000 37.37%, #C8191C 237.79%);
+    padding: 20rem 0;
+}
+#service h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+#service h2 {
+    padding-bottom: 10rem;
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.service-data h3 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.service-data {
+    padding: 5rem 6rem;
+    padding-top: 3rem;
+    border: 1px solid white;
+
+}
+.service-imgs p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    max-width: 53.1rem;
+}
+.service-imgs >*:nth-of-type(odd) {
+    padding-left: 4.2rem;
+    padding-right: 7.5rem;
+    padding-bottom: 15rem;
+
+}
+.service-imgs >*:nth-of-type(even) {
+   padding-right: 4.2rem;
+   padding-left: 7.5rem;
+}
+/*************/
+
 
 
 
