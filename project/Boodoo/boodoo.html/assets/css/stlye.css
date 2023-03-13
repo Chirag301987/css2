@@ -24,12 +24,39 @@ img {
     max-width: 100%;
     display: block;
 }
+.button_hero {
+    background-color: #C8191C;
+    width: 30rem;
+    height: 6.5rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    display: inline-block;
+}
 p {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
 }
+h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+h2 {
+    padding-bottom: 10rem;
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
 
 /* ***Header*** */
 header {
@@ -40,6 +67,9 @@ header {
     width: 100%;
     z-index: 999;
     background-color: black;
+}
+header .container {
+    padding-top: 0 ;
 }
 .main-header {
     display: flex;
@@ -74,6 +104,9 @@ header {
     background-position: center center;
     background-size: cover;
 }
+#hero .container {
+    padding-top: 0;
+}
 #hero::before {
     content: '';
     background-image: url(../images/hero.png);
@@ -90,7 +123,6 @@ header {
     z-index: 99;
     position: relative;
 }
-
 .hero-data h1 {
     font-weight: 700;
     font-size: 13rem;
@@ -98,11 +130,9 @@ header {
     color: #FFFFFF;
     margin-top: 30rem;
 }
-
 .hero-data span {
     color: #C8191C;
 }
-
 .hero-data p {
     padding: 5rem 45rem;
     text-align: center;
@@ -115,17 +145,10 @@ header {
 .hero-data a {
     margin: 0 auto;
 }
-.button_hero {
-    background-color: #C8191C;
-    padding: 1.5rem 7rem;
-    font-weight: 700;
-    font-size: 2.4rem;
-    color: #FFFFFF;
-}
+
 /***DISCOVER***/
 #discover {
     background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-    width: 100%;
 }
 .discover-icons {
     display: flex;
@@ -139,20 +162,6 @@ header {
     font-size: 5.4rem;
     line-height: 7.3rem;
     text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.main-title h5 {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-    text-transform: uppercase;
-    color: #C8191C;
-}
-.main-title h2 {
-    font-weight: 700;
-    font-size: 8.4rem;
-    line-height: 11.4rem;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -185,7 +194,7 @@ header {
     left: 3rem;
     top: 3.8rem;
 }
-.with-data .btn-theme {
+.with-data .button_hero {
     margin-top: 10rem;
     display: inline-block;
 }
@@ -193,15 +202,9 @@ header {
 
 /***SUPER***/
 #super {
-    padding: 20rem 0;
     background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
 }
-#super h2 {
-    font-weight: 700;
-    font-size: 14rem;
-    line-height: 19.1rem;
-    color: #FFFFFF;
-}
+
 #super p {
     max-width: 48.5rem;
     padding-top: 11.5rem;
@@ -210,27 +213,10 @@ header {
     padding-bottom: 10.4rem;
     padding-left: 8.8rem;
 }
-/**********/
 
+/*** servise *****/
 #service {
     background: linear-gradient(0deg, #000000 37.37%, #C8191C 237.79%);
-    padding: 20rem 0;
-}
-#service h5 {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #C8191C;
-}
-#service h2 {
-    padding-bottom: 10rem;
-    font-weight: 700;
-    font-size: 8.4rem;
-    line-height: 11.4rem;
-    text-align: center;
-    color: #FFFFFF;
 }
 .service-data h3 {
     padding-top: 5rem;
@@ -266,10 +252,40 @@ header {
 }
 /*************/
 
-
-
-
-
+/***** why *****/
+#why {
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+}
+.why_data h4 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+    margin: 3rem 0 ;
+    text-transform: uppercase;
+}
+.why-imgs p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    max-width: 39.5rem;
+}
+.why-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.with-img img {
+    width: 15rem;
+    height: 15rem;
+    object-position: center center;
+    object-fit: cover;
+}
+/* ***horoscope*** */
+#horoscope {
+    background: linear-gradient(0deg, #000000 37.37%, #C8191C 237.79%);
+}
 
 /* ******************* */
 @media screen and (min-width:1500px) {
@@ -277,6 +293,7 @@ header {
         max-width: 150rem;
         padding: 0 1rem;
         margin: 0 auto;
+        padding-top: 20rem;
     }
 
 }
@@ -286,6 +303,7 @@ header {
         max-width: 170rem;
         padding: 0 1rem;
         margin: 0 auto;
+        padding-top: 20rem;
     }
 
 }
