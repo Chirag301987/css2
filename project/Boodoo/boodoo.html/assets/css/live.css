@@ -1,0 +1,14 @@
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_header nav a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-left: 5rem;
+}
+
