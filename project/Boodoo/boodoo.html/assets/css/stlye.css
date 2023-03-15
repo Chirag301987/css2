@@ -114,6 +114,9 @@ header {
 .main-header ul {
     display: flex;
 }
+.main-header ul {
+    display: flex;
+}
 .main-header ul li a {
     margin-right: 5rem;
     font-weight: 700;
