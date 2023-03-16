@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --red: #C8191C;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya';
+    color: var(--white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--red);
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 0;
+}
+
+img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 13rem;
+    line-height: 16rem;
+    margin-bottom: 5.5rem;
+}
+
+h2 {
+    font-size: 13rem;
+    line-height: 19rem;
+}
+
+h3 {
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+}
+
+h4 {
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+}
+
+h5 {
+    font-size: 4.4rem;
+    line-height: 6rem;
+}
+
+h6 {
+    color: var(--red);
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+
+.pt_200 {
+    padding-top: 20rem;
+}
+
+.pb_200 {
+    padding-bottom: 20rem;
+}
+
+.mb_100 {
+    margin-bottom: 10rem;
+}
+
+.red_text {
+    color: var(--red);
+}
+
+.red_btn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    width: 30rem;
+    height: 6.3rem;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: 2px solid var(--red);
+    transition: all 0.3s;
+}
+
+.red_btn:hover {
+    background-color: transparent;
+    color: var(--red);
+}
+
+/* ========== Header ========== */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+    padding: 4rem 0;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_header nav a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-left: 5rem;
+}
+
+/* ========== Hero section CSS ========== */
+.hero_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    position: relative;
+    text-align: center;
+    padding: 37rem 0 32rem;
+}
+
+.hero_sec::before {
+    content: '';
+    background-image: url('../images/hero.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.hero_sec .container {
+    z-index: 1;
+    position: relative;
+}
+
+.hero_sec h1+p {
+    max-width: 900px;
+    margin: 0 auto 5.5rem;
+}
+
+/* ========== Discover Section ========== */
+.discover_sec {
+    background: linear-gradient(0, #000000 16.49%, #C8191C 274.79%);
+}
+
+.discover_sec .img_box {
+    margin-bottom: 2rem;
+}
+
+.discover_sec .about_part .img_box {
+    padding-right: 9rem;
+    border-right: 0.2px solid var(--white);
+    margin-bottom: 10rem;
+    height: 50rem;
+}
+
+.discover_sec .about_part .img_box+p {
+    max-width: 54rem;
+}
+
+.discover_sec .about_part .content {
+    padding-left: 8rem;
+}
+
+.discover_sec .about_part .content h3 {
+    margin: 1.8rem 0 10rem;
+}
+
+/* ========== Super Section CSS =========== */
+#super {
+    /* padding: 20rem 0; */
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
+}
+
+#super h2 {
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 191px;
+    color: #FFFFFF;
+}
+
+#super p {
+    max-width: 48.5rem;
+    padding-top: 11.5rem;
+}
+
+.team-imgs {
+    padding-bottom: 10.4rem;
+    padding-left: 8.8rem;
+}
+
+/* ============ Service Section CSS ============ */
+
+.service_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+
+.service_sec .service_block {
+    max-width: 68rem;
+}
+
+.service_sec .service_part {
+    gap: 15rem;
+}
+
+.service_sec .service_block .inner {
+    border: 2px solid var(--white);
+    padding: 5rem;
+}
+
+.service_sec .service_block img {
+    height: 32.4rem;
+    width: 100%;
+}
+
+.service_sec h5 {
+    margin: 5rem 0 2rem;
+}
+
+/* ============= Why section ============= */
+
+.why_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+.why_sec h4 {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    margin: 3rem 0;
+}
+
+/* ============== Horoscope Section ============= */
+.horoscope_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+
+}
+
+.horoscope_sec img {
+    margin-right: 6rem;
+}
+
+.horoscope_sec .content {
+    max-width: 18rem;
+}
+
+.horoscope_sec .content h4 {
+    margin-bottom: 1rem;
+}
+
+.horoscope_sec .row:not(:last-child)>div:not(:last-child) {
+    margin-right: 8rem;
+}
+
+.horoscope_sec h2 {
+    font-size: 10rem;
+    line-height: 13.6rem;
+}
+
+/* =========== Appointment Section  =========== */
+
+.appointment_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+.gap_80 {
+    gap: 8rem;
+}
+
+form>div.row {
+    margin-left: calc(var(--bs-gutter-x) * -3);
+    margin-right: calc(var(--bs-gutter-x) * -3);
+}
+
+form>div.row>div {
+    padding-left: calc(var(--bs-gutter-x) * 3);
+    padding-right: calc(var(--bs-gutter-x) * 3);
+}
+
+form label.form-label {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+form input.form-control {
+    margin-bottom: 8rem;
+}
+
+form input.form-control,
+form select.form-select {
+    border: 0.2rem solid var(--white);
+    padding: 1rem 3rem;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: var(--white);
+    height: 10rem;
+}
+
+form select.form-select option {
+    color: #000000;
+    text-transform: lowercase;
+}
+
+form input.form-control:focus,
+form select.form-select:focus {
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--white);
+    outline: 0;
+    box-shadow: none;
+}
+
+form input::placeholder {
+    opacity: 0;
+    color: var(--white) !important;
+}
+
+/* ======== Get Started Section ============ */
+.get_started_sec {
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    width: 100%;
+    /* height: 50.5rem; */
+    /* background-blend-mode: multiply; */
+    position: relative;
+    padding: 9rem 0;
+}
+
+.get_started_sec::before {
+    content: '';
+    background-image: url('../images/Wheel2\ 2.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.button {
+    position: relative;
+    z-index: 999;
+    padding-top: 4rem;
+}
+
+/* ===========member-ship=========== */
+#member-ship {
+    background: linear-gradient(180deg, #000000 16.49%, #C8191C 274.79%);
+    padding: 20rem 0;
+}
+
+.box {
+    padding: 60px 80px;
+    border: 2px solid white;
+    width: 46.6rem;
+    height: 65rem;
+}
+
+.box h4 {
+    color: white;
+}
+
+.box h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.box span {
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.box p i {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 3rem;
+}
+.box:hover{
+    background-color: red;
+    color: #fff;
+    border: none;
+}
+.box:hover .red_btn {
+    background-color: white;
+    color: red;
+}
+/* ==========HAPPY CLIENT=========== */
+#say-about {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    /* height: 100vh; */
+    padding: 20rem 0;
+}
+
+#say-about .main-title h3 {
+    max-width: 140rem;
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 11.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.arrow-img img {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8rem;
+}
+.swiper-wrapper{
+    margin: 2rem 5rem;
+}
+.swiper-wrapper .client-say {
+    padding-left: 3rem;
+    width: 48rem;
+    height: 76rem;
+    
+}
+.client-say .client-img {
+    Width: 47.6rem;
+    Height: 51.2rem;
+    margin-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+.client-say .client-img img {
+    Width: 100%;
+    Height: 100%;
+   
+}
+.client-say .client-data{
+    position: relative;
+}
+.client-say .client-data span {
+    position: absolute;
+    width: 9.8rem;
+    height: 8.5rem;
+    color:  rgba(255, 255, 255, 0.2);
+    font-size: 30rem;
+    top: -26rem;
+    left: -1rem;
+}
+.client-say .client-data p {
+    max-width: 46.5rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+.client-say .client-data h4 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: #FFFFFF;
+    padding-top: 1.5rem;
+}
+.mySwiper{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.mySwiper .swiper-button-next{
+    position: absolute;
+    top: 33rem;
+    color: #FFF;
+}
+.mySwiper .swiper-button-prev{
+    position: absolute;
+    top: 33rem;
+    color: #FFF;
+    left: 0rem;
+}
+
+/* =========BLOG=========== */
+#blog {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    padding: 5rem 0;
+}
+
+#blog .main-title {
+    text-align: center;
+}
+
+.blog-data img {
+    width: 36.1rem;
+    height: 45rem;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 5rem;
+}
+
+.blog-data h3 {
+    margin-top: 6rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 30rem;
+}
+
+.blog-data p {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    max-width: 36rem;
+}
+.blog-data p:hover span a {
+    color: #0085FF;
+}
+
+/****************Feedback Section*************/
+#feedback {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    padding: 15rem 0;
+}
+
+#feedback hr {
+    border: 2px solid #ffffff;
+}
+
+.fb-data {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-data .maps img {
+    width: 32.1rem;
+    height: 18.5rem;
+}
+
+.fb-data h3 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.fb-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    padding-top: 2rem;
+}
+.fb-data .logo-blog p{
+    width: 273.75px;
+    padding-top: 2rem;
+}
+.fb-data p:hover {
+    color: #0085FF;
+}
+.copyright {
+    padding-bottom: 4.5rem;
+}
+
+@media screen and (min-width: 1650px) {
+    /* html {
+        font-size: 71.25%;
+
+    } */
+    
+    .container {
+        max-width: 150rem;
+    }
+    .hero_data {
+        padding-top: 25rem;
+    }
+    .hero_data h1 {
+        font-size: 11rem;
+        line-height: 15rem;
+    }
+    .hero_data p {
+        padding: 4.5rem 0rem;
+    }
+    .discover_icon img {
+        max-width: 50%;
+    }
+    .discover_icon h3 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    #discover .about_imgdemo p {
+        margin-top: 7rem;
+    }
+    #discover .about_data h3 {
+        margin-bottom: 8.5rem;
+    }
+    p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    h2 {
+        font-size: 80px;
+        line-height: 111px;
+    }
+    .super h3{
+        font-size: 125px;
+        line-height: 185px;
+    }
+    .super p {
+        margin-top: 11rem;
+        max-width: 48.5rem;
+    }
+    .service h3 {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+    .why_choose h3 {
+        text-align: center;
+        margin-bottom: 15rem;
+    }
+    .horoscope .under_2 {
+        padding: 8rem 0rem;
+    }
+    .horoscope .under_1> :nth-child(2), #horoscope .under_2> :nth-child(2) {
+        margin: 0rem 8rem;
+    }
+    .meet_team .meet_team_data>input {
+        margin-bottom: 6rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 161rem;
+        padding: 0 2rem;
+    }
+}

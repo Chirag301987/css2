@@ -344,12 +344,11 @@ header {
 
 
 /* ******************* */
-@media screen and (min-width:1500px) {
+/* @media screen and (min-width:1500px) {
     .container {
         max-width: 150rem;
         padding: 0 1rem;
         margin: 0 auto;
-        padding-top: 20rem;
     }
 
 }
@@ -359,7 +358,12 @@ header {
         max-width: 170rem;
         padding: 0 1rem;
         margin: 0 auto;
-        padding-top: 20rem;
-    }
+     }
 
+} */
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 161rem;
+        padding: 0 2rem;
+    }
 }
