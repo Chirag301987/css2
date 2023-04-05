@@ -1,17 +1,24 @@
-let box1 = parseInt (prompt("Enter your Gujarati mark"));
-console.log(box1);
-document.getElementById("gmark").innerHTML = box1;
-let box2 = parseInt (prompt("Enter your Hindi mark"));
-console.log(box2);
-document.getElementById("gmark").innerHTML = box2;
-let box3 = parseInt (prompt("Enter your maths mark"));
-console.log(box3);
-document.getElementById("gmark").innerHTML = box3;
+let A = parseInt (prompt("Enter your Gujarati mark"));
+document.getElementById("A").innerHTML = A;
+let B = parseInt (prompt("Enter your Hindi mark"));
+document.getElementById("B").innerHTML = B;
+let C = parseInt (prompt("Enter your Maths mark"));
+document.getElementById("C").innerHTML = C;
+let a = "Gujarati"
+let b = "Hindi"
+let c = "Maths"
 
-let greeting; 
-  if (box1 < box2) {
-    
-  } else {
-    greeting = "PASS";
-  }
-document.getElementById("pf").innerHTML = greeting;
+if (A > B) {
+    if (A > C) {
+        document.getElementById("max").innerHTML = A+a;
+    } else {
+        document.getElementById("max").innerHTML = C+c;
+    }
+} else {
+    if (B > C) {
+        document.getElementById("max").innerHTML =B+b;
+    } else {
+        document.getElementById("max").innerHTML = C+(c);
+    }
+}
+
