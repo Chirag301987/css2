@@ -1,50 +1,20 @@
-$('button[type=submit]').attr('disabled', 'disabled');
+let n1 = parseInt(Math.floor(Math.random() * 10));
+let n2 = parseInt(Math.floor(Math.random() * 10));
 
-var randomNum1;
-var randomNum2;
+let rightans = n1+n2
 
-//set the largeest number to display
+document.getElementById("num1").innerHTML = n1;
+document.getElementById("num2").innerHTML = n2;
 
-var maxNum = 20;
-var total;
 
-randomNum1 = Math.ceil(Math.random() * maxNum);
-randomNum2 = Math.ceil(Math.random() * maxNum);
-total = randomNum1 + randomNum2;
+function submit() {
+  let ans =document.getElementById("Ans").Value
 
-$("#question").prepend(randomNum1 + " + " + randomNum2 + "=");
-
-// When users input the value
-
-$("#ans").keyup(function() {
-
-  var input = $(this).val();
-  var slideSpeed = 200;
-
-  $('#message').hide();
-
-  if (input == total) {
-
-    $('button[type=submit]').removeAttr('disabled');
-    $('#success').slideDown(slideSpeed);
-    $('#fail').slideUp(slideSpeed);
-
+  if (rightans = ans) {
+    alert ("your ans is correct")
   } else {
-
-    $('button[type=submit]').attr('disabled', 'disabled');
-    $('#fail').slideDown(slideSpeed);
-    $('#success').slideUp(slideSpeed);
-
+    alert ("your ans is correct" + "correct ans" rightans )
   }
 
-});
-
-// Wheen "reset button" click, generating new randomNum1 & randomNum2
-$("#reset").on("click", function() {
-  randomNum1 = Math.ceil(Math.random() * maxNum);
-  randomNum2 = Math.ceil(Math.random() * maxNum);
-  total = randomNum1 + randomNum2;
-  $("#question").empty();
-  $("#ans").val('');
-  $("#question").prepend(randomNum1 + " + " + randomNum2 + "=");
-});
+   window.location.reload();
+}
