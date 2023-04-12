@@ -14,12 +14,19 @@ const handelblur = () => {
     if (data === '') {
         f.style.borderColor= 'red'
         
-    } else if () {
+    } else  {
         f.style.borderColor= 'blue'
-    } else {
+    }   
+}
 
+
+const handelkeyup = () => {
+    let data = f.value
+    if (data === '') {
+        f.style.borderColor= "red"
+    } else {
+        f.style.borderColor = "blue"
     }
-    
 }
 const handelchenge = () => {
     let fvalue = f.value
@@ -29,4 +36,5 @@ const handelchenge = () => {
 
 f.addEventListener("focus",handelfocus);
 f.addEventListener("blur",handelblur);
-f.addEventListener("change",handelchenge )
+f.addEventListener("change",handelchenge );
+f.addEventListener("keyup",handelkeyup);
