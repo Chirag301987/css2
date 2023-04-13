@@ -6,8 +6,8 @@ const handelsubmit = () => {
     return false
 }
 const handelfocus =() => {
-   
-    f.style.borderColor = "green"
+   let data = f.value
+    
 }
 const handelblur = () => {
     let data = f.value
