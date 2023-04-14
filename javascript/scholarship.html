@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p {
+            width: 130px;
+            height: 20px;
+            border: 1px solid red;
+            color: green;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <form action="#">
+        <form action="#" onsubmit="return hsubmit()">
             <input type="text" name="fname" id="name" placeholder="Enter Your Name"><br><br>
-            <input type="text" name="fees" id="fees" placeholder="Enter Your Fees"><br><br>
+            <input type="text" name="grade" id="grade" placeholder=" Enter Your CGPA"><br><br>
+
+            <p>Your Grade is </p>
+            <p id="gd"></p><br>
             <select name="cast" id="cast">
                 <option value="select your cast">select your cast</option>
                 <option value="OPEN">OPEN</option>
@@ -18,13 +33,18 @@
                 <option value="SC">SC</option>
                 <option value="ST">ST</option>
             </select><br><br>
-            <input type="text" name="grade" id="grade" placeholder=" Enter Your Grade"><br><br>
-            <input type="submit" onclick ="formsubmit()" >
-            <h2 id="re"></h2>
+            <input type="text" name="fees" id="fees" placeholder="Enter Your Fees"><br><br>
+            <p>Your Scholarship Is</p>
+            <p id="ss"></p><br>
+            <p>Your Fainal Fees Is</p>
+            <p id="ff"></p><br><br>
+            <input type="submit" onclick="hform()">
+
         </form>
     </div>
 
 
     <script src="./js/scholarship.js"></script>
 </body>
+
 </html>

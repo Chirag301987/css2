@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            width: 150px;
+            height: 20px;
+            color: brown;
+            border: 2px solid blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" onsubmit="return hsubmit()">
+            <input type="text" name="income" id="income" placeholder="Enter Your TOTAL INCOME"><br><br>
+            <p> ₹0.00 to ₹3.00 lakh  = <span id="a"></span></p>
+            <p> ₹3.00 to ₹5.00 lakh  = <span id="b"></span></p>
+            <p> ₹5.00 to ₹7.50 lakh  = <span id="c"></span></p>
+            <p> ₹7.50 to ₹10.00 lakh = <span id="d"></span></p>
+            <p>₹10.00 to ₹12.50 lakh = <span id="e"></span></p>
+            <p>₹12.50 to ₹15.00 lakh = <span id="f"></span></p>
+            <p>    > ₹15.00 lakh     = <span id="g"></span></p>
+            <p>      TOTAL TAX       = <span id="t"></span></p>
+            <input type="submit" onclick="hform()">
+            
+        </form>
+    </div>
+    
+
+    <script src="./js/incometax.js"></script>
+</body>
+</html>
