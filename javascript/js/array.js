@@ -35,8 +35,8 @@ let rollNo = [15,28,7,36,77];
 
 
 // Array are a special type of object.
-let data = ['chirag',35, 'surat',301];
-let data1 = ['laxminarayan',08]
+// let data = ['chirag',35, 'surat',301];
+// let data1 = ['laxminarayan',08]
 
 // data.push(99);
 // data.pop(data);
@@ -53,6 +53,9 @@ let data1 = ['laxminarayan',08]
 // f =data.find ((v) => v>99)
 // console.log(f);
 
-data.splice(1,3, "Lemon", "Kiwi");
+// data.splice(1,3, "Lemon", "Kiwi");
 
-console.log(data);
+// console.log(data);
+
+// minValue = Math.min(...array);
+// maxValue = Math.max(...array);
