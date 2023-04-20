@@ -57,5 +57,3 @@ let rollNo = [15,28,7,36,77];
 
 // console.log(data);
 
-// minValue = Math.min(...array);
-// maxValue = Math.max(...array);

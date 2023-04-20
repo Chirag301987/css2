@@ -12,7 +12,7 @@
 
     <script>
         let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
-
+        let arra2 = [50, 100]
 
         const findmax = (data) => {
             let max = data[0];
@@ -23,7 +23,7 @@
             }
             console.log('max is:', max);
         }
-        findmax(arra1);
+        findmax(arra1)
 
         const findmim = (data) => {
             let max = data[0];
@@ -34,25 +34,34 @@
             }
             console.log('mim is:', max);
         }
-        findmim(arra1);
+        findmim(arra1)
 
         const ascending = (data) => {
             let ans = data.sort((a, b) => a - b);
             console.log("ascending: " + ans);
         }
-        ascending(arra1);
+        ascending(arra1)
 
         const descending = (data) => {
             let ans = data.sort((a, b) => b - a);
             console.log('descending: ' + ans);
         }
-        descending(arra1);
+        descending(arra1)
 
-        const Reversing = (data) => {
-            let ans = data.reverse(data);
+        const Reversing = (arra1) => {
+            let ans = arra1.reverse();
             console.log('Reversing: ' + ans);
         }
         Reversing(arra1)
+
+        const Reversing2 = (arra1) => {
+            let Reversing3 = [];
+            for (let i = arra1.length - 1; i >= 0; i--) {
+                Reversing3.push(arra1[i]);
+            }
+            console.log('Reversing2: ' + Reversing3);
+        }
+        Reversing2(arra1)
 
         const sum = (data) => {
             let dsum = 0;
@@ -81,14 +90,50 @@
 
         const Removing = (data) => {
             let unique = [];
-            data.map ((v) =>{
+            data.map((v) => {
                 if (!unique.includes(v))
-                unique.push(v);
+                    unique.push(v);
             })
-            console.log("Removing duplicates: "+unique);
-        
+            console.log("Removing duplicates: " + unique);
         }
         Removing(arra1)
+
+        const Merging = (data) => {
+            let ans = data.concat(arra2)
+            console.log('Merging: ' + ans);
+        }
+        Merging(arra1)
+
+        const Splitting = (data) => {
+            let unique = [];
+            let unique1 = [];
+            data.map((v) => {
+                if (v > 50) {
+                    unique.push(v);
+                } else {
+                    unique1.push(v);
+                }
+            })
+            console.log("Splitting -50: " + unique1 + "  ," + " +50: " + unique);
+        }
+        Splitting(arra1)
+
+        const binary_search = (data) => {
+            let start = 0;
+            let end = data.length - 1;
+
+            let mid = Math.floor((start + end) / 2);
+            let x = 55
+            if (data[mid] === x) return true;
+            else if (data[mid] < x)
+                start = mid + 1;
+            else
+                end = mid - 1;
+        }
+
+        binary_search(arra1)
+
+
 
     </script>
 
