@@ -13,128 +13,156 @@
     <script>
         let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
         let arra2 = [50, 100]
+        console.log(arra1);
 
-        const findmax = (data) => {
-            let max = data[0];
-            for (let i = 0; i < data.length; i++) {
-                if (max < data[i]) {
-                    max = data[i]
-                }
-            }
-            console.log('max is:', max);
+        // const findmax = (data) => {
+        //     let max = data[0];
+        //     for (let i = 0; i < data.length; i++) {
+        //         if (max < data[i]) {
+        //             max = data[i]
+        //         }
+        //     }
+        //     console.log('max is:', max);
+        // }
+        // findmax(arra1)
+
+        // const findmim = (data) => {
+        //     let mim = data[0];
+        //     for (let i = 0; i < data.length; i++) {
+        //         if (mim > data[i]) {
+        //             mim = data[i]
+        //         }
+        //     }
+        //     console.log('mim is:', mim);
+        // }
+        // findmim(arra1)
+
+        // const ascending = (data) => {
+        //     let ans = data.sort((a, b) => a - b);
+        //     console.log("ascending: " + ans);
+        // }
+        // ascending(arra1)
+
+        // const descending = (data) => {
+        //     let ans = data.sort((a, b) => b - a);
+        //     console.log('descending: ' + ans);
+        // }
+        // descending(arra1)
+
+        // const Reversing = (arra1) => {
+        //     let ans = arra1.reverse();
+        //     console.log('Reversing: ' + ans);
+        // }
+        // Reversing(arra1)
+
+        // const Reversing2 = (arra1) => {
+        //     let Reversing3 = [];
+        //     for (let i = arra1.length - 1; i >= 0; i--) {
+        //         Reversing3.push(arra1[i]);
+        //     }
+        //     console.log('Reversing2: ' + Reversing3);
+        // }
+        // Reversing2(arra1)
+
+        // const sum = (data) => {
+        //     let dsum = 0;
+        //     for (let i = 0; i < data.length; i++) {
+        //         dsum += data[i];
+        //     }
+        //     console.log("sum: " + dsum);
+        // }
+        // sum(arra1)
+
+        // const average = (data) => {
+        //     let dsum = 0;
+        //     for (let i = 0; i < data.length; i++) {
+        //         dsum += data[i];
+        //     }
+        //     let aver = dsum / data.length
+        //     console.log("average: " + aver);
+        // }
+        // average(arra1)
+
+        // const Check = (data) => {
+        //     let ans = data.includes(70);
+        //     console.log("Checking(70) : " + ans);
+        // }
+        // Check(arra1)
+
+        // const Removing = (data) => {
+        //     let unique = [];
+        //     data.map((v) => {
+        //         if (!unique.includes(v))
+        //             unique.push(v);
+        //     })
+        //     console.log("Removing duplicates: " + unique);
+        // }
+        // Removing(arra1)
+
+        // const Merging = (data) => {
+        //     let ans = data.concat(arra2)
+        //     console.log('Merging: ' + ans);
+        // }
+        // Merging(arra1)
+
+        // const Splitting = (data) => {
+        //     let unique = [];
+        //     let unique1 = [];
+        //     data.map((v) => {
+        //         if (v > 50) {
+        //             unique.push(v);
+        //         } else {
+        //             unique1.push(v);
+        //         }
+        //     })
+        //     console.log("Splitting -50: " + unique1 + "  ," + " +50: " + unique);
+        // }
+        // Splitting(arra1)
+
+
+        // const Rotating = (data, k) => {
+        //     k = 5
+        //     for (let i = 0; i < k; i++) {
+        //         data.concat(data.push(data.shift()));
+        //     }
+
+        //     console.log("Rotating: " + data);
+        // }
+        // Rotating(arra1)
+
+        // const second_largest = (data) => {
+        //     let ans = data.sort((a, b) => b - a);
+
+        //     console.log('second_largestdata: ' + data[1]);
+        // }
+        // second_largest(arra1)
+
+        // const second_smallest = (data) => {
+        //     let ans = data.sort((a, b) => a - b);
+
+        //     console.log("second_smallest: " + data[1]);
+        // }
+        // second_smallest(arra1)
+
+        const median = (data) => {
+            let ans =Math.floor(data.lenght /2 )
+            console.log(data[ans]);
+            
+            // for (let i = 0; i < array.length; i++) {
+            //     if (data.length % 2 != 0) {
+            //     let middle = Math.floor(data.length / 2)
+            //     median = data[middle]
+            // } else {
+            //     let middle = Math.floor(data.length / 2)
+            //     median = (arr[middle] + arr[middle - 1]) / 2
+            // }
+                
+            // }
+            
+            // console.log(median)
+
         }
-        findmax(arra1)
-
-        const findmim = (data) => {
-            let max = data[0];
-            for (let i = 0; i < data.length; i++) {
-                if (max > data[i]) {
-                    max = data[i]
-                }
-            }
-            console.log('mim is:', max);
-        }
-        findmim(arra1)
-
-        const ascending = (data) => {
-            let ans = data.sort((a, b) => a - b);
-            console.log("ascending: " + ans);
-        }
-        ascending(arra1)
-
-        const descending = (data) => {
-            let ans = data.sort((a, b) => b - a);
-            console.log('descending: ' + ans);
-        }
-        descending(arra1)
-
-        const Reversing = (arra1) => {
-            let ans = arra1.reverse();
-            console.log('Reversing: ' + ans);
-        }
-        Reversing(arra1)
-
-        const Reversing2 = (arra1) => {
-            let Reversing3 = [];
-            for (let i = arra1.length - 1; i >= 0; i--) {
-                Reversing3.push(arra1[i]);
-            }
-            console.log('Reversing2: ' + Reversing3);
-        }
-        Reversing2(arra1)
-
-        const sum = (data) => {
-            let dsum = 0;
-            for (let i = 0; i < data.length; i++) {
-                dsum += data[i];
-            }
-            console.log("sum: " + dsum);
-        }
-        sum(arra1)
-
-        const average = (data) => {
-            let dsum = 0;
-            for (let i = 0; i < data.length; i++) {
-                dsum += data[i];
-            }
-            let aver = dsum / data.length
-            console.log("average: " + aver);
-        }
-        average(arra1)
-
-        const Check = (data) => {
-            let ans = data.includes(70);
-            console.log("Checking(70) : " + ans);
-        }
-        Check(arra1)
-
-        const Removing = (data) => {
-            let unique = [];
-            data.map((v) => {
-                if (!unique.includes(v))
-                    unique.push(v);
-            })
-            console.log("Removing duplicates: " + unique);
-        }
-        Removing(arra1)
-
-        const Merging = (data) => {
-            let ans = data.concat(arra2)
-            console.log('Merging: ' + ans);
-        }
-        Merging(arra1)
-
-        const Splitting = (data) => {
-            let unique = [];
-            let unique1 = [];
-            data.map((v) => {
-                if (v > 50) {
-                    unique.push(v);
-                } else {
-                    unique1.push(v);
-                }
-            })
-            console.log("Splitting -50: " + unique1 + "  ," + " +50: " + unique);
-        }
-        Splitting(arra1)
-
-        const binary_search = (data) => {
-            let start = 0;
-            let end = data.length - 1;
-
-            let mid = Math.floor((start + end) / 2);
-            let x = 55
-            if (data[mid] === x) return true;
-            else if (data[mid] < x)
-                start = mid + 1;
-            else
-                end = mid - 1;
-        }
-
-        binary_search(arra1)
-
-
-
+        median(arra1)
     </script>
 
 </body>
