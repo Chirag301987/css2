@@ -145,6 +145,7 @@
         // second_smallest(arra1)
 
         const median = (data) => {
+
             let ans =Math.floor(data.lenght /2 )
             console.log(data[ans]);
             
@@ -161,8 +162,20 @@
             
             // console.log(median)
 
+            for (let i = 0; i < data.length; i++) { 
+                if (data.length % 2 != 0) {
+                    let middle = Math.floor(data.length / 2)
+                    ans = data[middle]
+                } else {
+                    let middle = Math.floor(data.length / 2)
+                    ans = ( (data[middle] + data[middle - 1]) / 2 )
+                }
+            }
+            console.log("median: "+ans)
         }
-        median(arra1)
+        median(arra1);
+
+        
     </script>
 
 </body>
