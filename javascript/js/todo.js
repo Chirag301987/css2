@@ -1,51 +1,73 @@
-let todof = document.getElementById("todo_form")
-let arr = []
-let updat = false
+let todof = document.getElementById("todo_form");
+let arr = [];
+let updat = false; uid = null;
+
+const getdata = () => {
+    const data = JSON.parse(localStorage.getItem("todo"));
+    console.log(data);
+    if (data != null) {
+        arr = dada;
+        disply();
+
+    }
+}
 
 const hendalremot = (i) => {
- console.log(i);
- arr.splice(i,1)
- disply();
-} 
+    arr.splice(i, 1);
+    localStorage.setItem("todo", JSON.stringify(arr));
+    disply();
+}
 
 const updatremot = (i) => {
-    console.log(i);
-    document.getElementById('todo_data').value = arr[i]
-    console.log(ans);
+
+    document.getElementById('todo_data').value = arr[i];
+    updat = true;
+    uid = i;
     disply();
 
 }
 
 const disply = () => {
-let disp = '<ul>';
-arr.map((v,i) => {
-    disp += '<li>' + v ;
-    disp += '<button onclick="hendalremot(' +i+ ')">X</button>'
-    disp += '<button onclick="updatremot(' +i+ ')">ADD</button>'
-    disp += '</li>'
-});
-disp += '</ul>'
-document.getElementById('todo').innerHTML = disp;
+    let disp = '<ul>';
+    arr.map((v, i) => {
+        disp += '<li>' + v;
+        disp += '<button onclick="hendalremot(' + i + ')">X</button>';
+        disp += '<button onclick="updatremot(' + i + ')">ADD</button>';
+        disp += '</li>';
+    });
+    disp += '</ul>';
+    document.getElementById('todo').innerHTML = disp;
 }
 
 const handelsubmit = () => {
-    let data = document.getElementById("todo_data").value
+    let data = document.getElementById("todo_data").value;
     arr.push(data);
+    document.getElementById('todo_data').value = "";
     disply();
-    event.preventDefault()
+    localStorage.setItem("todo", JSON.stringify(arr));
+    event.preventDefault();
 }
 
-const handelupdat = (a) => {
-     console.log(a);
+const handelupdat = () => {
+    let data = document.getElementById("todo_data").value;
+    arr[uid] = data;
+    console.log(uid);
+    document.getElementById('todo_data').value = "";
+    disply();
+    localStorage.setItem("todo", JSON.stringify(arr));
+    updat = false; uid = null;
+    event.preventDefault();
 }
 
 
 const handel = () => {
     if (updat) {
         handelupdat();
-    }else {
+    } else {
         handelsubmit();
     }
 }
 
-todof.addEventListener("submit",handel)
+todof.addEventListener("submit", handel);
+window.onload = getdata();
+
