@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // ... spreading operator
+
+        let arr = [25,36,89,55];
+        let arr1 = [89,99];
+
+        // merging
+        let ans = [...arr, ...arr1];
+        console.log(ans);
+
+        let ans1 = [20,50,...arr,80, ...arr1,20];
+        console.log(ans1);
+
+        // destrictring
+        let info = ['chirag','patel',35];
+        let [fname,lname,age] = info;
+        console.log(age);
+
+        // filter
+        let fdata = arr.filter((v,i)=>v > 40);
+        console.log(fdata);
+
+        // reduce
+        let data = arr.reduce((acc,v,i)=>acc+v,0)
+        console.log(data);
+
+
+        // filter and reduce
+        let A =arr.filter((v)=>v>50).reduce((acc,v)=>acc+v,0);
+        console.log(A);
+
+    </script>
+</body>
+</html>
