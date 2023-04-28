@@ -13,8 +13,10 @@
     <script>
         let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
         let arra2 = [50, 100]
-        console.log(arra1);
-
+        let arrA = [100, 20, 30, 40];
+        let arrB = [10, 20, 30, 40];
+        // console.log(arra1);
+    // 1.    Finding the maximum element in an array.
         // const findmax = (data) => {
         //     let max = data[0];
         //     for (let i = 0; i < data.length; i++) {
@@ -24,7 +26,9 @@
         //     }
         //     console.log('max is:', max);
         // }
-        // findmax(arra1)
+        // findmax(arra1);
+
+
 
         // const findmim = (data) => {
         //     let mim = data[0];
@@ -148,8 +152,8 @@
 
         //     let ans =Math.floor(data.lenght /2 )
         //     console.log(data[ans]);
-            
-           
+
+
 
         //     for (let i = 0; i < data.length; i++) { 
         //         if (data.length % 2 != 0) {
@@ -163,29 +167,92 @@
         //     console.log("median: "+ans)
         // }
         // median(arra1);
-        
-        const remov =(data)=>{
-            let A = data.filter((v)=> v !== data);
-        console.log(A);
-        }
-        remov(arra1,55)
+
+        // const remov =(data)=>{
+        //     let A = data.filter((v)=> v !== data);
+        // console.log(A);
+        // }
+        // remov(arra1,55)
 
 
 
-        const replace =(data,old,ne) =>{
-            let B =data.map((a)=> a==old ? ne:a)
-            console.log(B);
-        }
-        
-        replace(arra1,55,66)
+        // const replace =(data,old,ne) =>{
+        //     let B =data.map((a)=> a==old ? ne:a)
+        //     console.log(B);
+        // }
+
+        // replace(arra1,55,66)
 
 
-        const maxsum =(data) => {
-            let Z = data.sort((a, b) => b - a).slice(0,3).reduce((acc,v)=>acc+v,0);
-            
-            console.log(Z);
-        }
-        maxsum(arra1)
+        // const maxsum =(data) => {
+        //     let Z = data.sort((a, b) => b - a).slice(0,3).reduce((acc,v)=>acc+v,0);
+
+        //     console.log(Z);
+        // }
+        // maxsum(arra1)
+
+
+
+
+        // const equal = () => {
+        //     let flage =true
+        //     if (arrA.length === arrB.length) { 
+        //         for (let i = 0; i < arrA.length; i++) {
+        //             if (arrA[i]===arrB[i]) {
+        //                 flage =true
+        //             }else {
+        //                 flage =false
+        //                 break;
+        //             }
+        //         }
+        //         if (flage) {
+        //             console.log("same");
+
+        //         }else {
+        //             console.log("not same");
+        //         }
+        //     }else {
+        //         console.log("not same");
+        //     }
+
+        // }
+        // equal();
+
+
+        // const soeted_ascending = (arrA) => {
+        //     for (let i = 0; i < arrA.length; i++) {
+        //         if (arrA[i] > arrA[i+1]) {
+        //             return false
+        //         }                   
+        //     }
+        //     return true
+        // }
+        // soeted_ascending(arrA);
+        // console.log(soeted_ascending(arrA));
+
+
+        // const sorted_descending = (arrA) => {
+        //     for (let i = 0; i < arrA.length; i++) {
+        //         if (arrA[i] < arrA[i+1]) {
+        //             return false
+        //         }                    
+        //     }
+        //     return true
+        // }
+        // sorted_descending(arrA);
+        // console.log(sorted_descending(arrA));
+
+        // const index_first = (data) => {
+        //     let ans = data.indexOf(55);
+        //     console.log(ans);
+        // }
+        // index_first(arra1)
+
+        // const index_last = (data) => {
+        //     let ans = data.lastIndexOf(55);
+        //     console.log(ans);
+        // }
+        // index_last(arra1)
     </script>
 
 </body>
