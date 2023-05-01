@@ -1,0 +1,62 @@
+1.Finding the maximum element in an array.
+	let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
+        const findmax = (data) => {
+            let max = data[0];
+            for (let i = 0; i < data.length; i++) {
+                if (max < data[i]) {
+                    max = data[i]
+                }
+            }
+            console.log('max is:', max);
+        }
+        findmax(arra1)
+        ans = max is: 85
+        
+2.Finding the minimum element in an array.
+	let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
+	const findmim = (data) => {
+            let mim = data[0];
+            for (let i = 0; i < data.length; i++) {
+                if (mim > data[i]) {
+                    mim = data[i]
+                }
+            }
+            console.log('mim is:', mim);
+        }
+        findmim(arra1)
+        ans = mim is: 2
+3.Sorting an array in ascending order.
+	let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
+	const ascending = (data) => {
+            let ans = data.sort((a, b) => a - b);
+            console.log("ascending: " + ans);
+        }
+        ascending(arra1)
+        ans = ascending: 2,3,36,55,55,70,85,85
+4.Sorting an array in descending order.
+	let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
+	const descending = (data) => {
+            let ans = data.sort((a, b) => b - a);
+            console.log('descending: ' + ans);
+        }
+        descending(arra1)
+        ans = descending: 85,85,70,55,55,36,3,2
+5.Reversing an array.
+	let arra1 = [3, 85, 36, 85, 55, 2, 70, 55,];
+	const Reversing = (arra1) => {
+            let ans = arra1.reverse();
+            console.log('Reversing: ' + ans);
+        }
+        Reversing(arra1)
+        ans = Reversing: 55,70,2,55,85,36,85,3
+        const Reversing2 = (arra1) => {
+            let Reversing3 = [];
+            for (let i = arra1.length - 1; i >= 0; i--) {
+                Reversing3.push(arra1[i]);
+            }
+            console.log('Reversing2: ' + Reversing3);
+        }
+        Reversing2(arra1)
+        ans = Reversing2: 55,70,2,55,85,36,85,3
+6.Finding the sum of all elements in an array.
+
