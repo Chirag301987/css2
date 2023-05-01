@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const data = {
+    personal_info: {
+        name: 'amit',
+        age: 25,
+        city: 'surat'
+    },
+    courses: ["C", "JavaScript", "React"],
+    branches: {
+        b1: {
+            admission: 50,
+            vacant_seat: 10
+        },
+        b2: {
+            admission: 30,
+            vacant_seat: 20
+        },
+        b3: {
+            admission: 25,
+            vacant_seat: 25
+        },
+        b4: {
+            admission: 40,
+            vacant_seat : 10
+        }
+    }
+}
+
+for (let i in data) {
+    console.log(data[i]);
+    if (i === 'personal_info') {
+        for (let A in data[i]) {
+            console.log(data[i][A]);          
+        }
+    }else {
+        console.log(data[i]);
+    }
+    if (i==='courses') {
+        for (let B in data[i]) {
+            console.log(data[i][B]);
+        }
+    }else {
+        console.log(data[i])
+    }
+    if (i==='branches') {
+        for (let C in data[i]) {
+            if (i==='b1','b2') {
+                for (let D in data[i]) {
+                    console.log(data[i][D]);
+                }
+            }else {
+                console.log(data[i][C]);
+            }
+       
+        }
+    }else {
+        console.log(data[i]);
+    }
+}
+
+// for (let i in data) {
+//     if (i === "personal_info","branches") {
+        
+//         for (let A in data[i]) {
+//             if ( i === "b1","b2","b3","b4") {
+//                 console.log(data[i][A]);
+//             }
+            
+        
+//         // console.log(data[i][A]);
+        
+        
+//     }
+        
+//     }else {
+        
+//     }
+   
+    
+// }
+    </script>
+</body>
+</html>

@@ -3,10 +3,10 @@ let arr = []
 let updat = false
 
 const hendalremot = (i) => {
- console.log(i);
- arr.splice(i,1)
- disply();
-} 
+    console.log(i);
+    arr.splice(i, 1)
+    disply();
+}
 
 const updatremot = (i) => {
     console.log(i);
@@ -17,15 +17,15 @@ const updatremot = (i) => {
 }
 
 const disply = () => {
-let disp = '<ul>';
-arr.map((v,i) => {
-    disp += '<li>' + v ;
-    disp += '<button onclick="hendalremot(' +i+ ')">X</button>'
-    disp += '<button onclick="updatremot(' +i+ ')">ADD</button>'
-    disp += '</li>'
-});
-disp += '</ul>'
-document.getElementById('todo').innerHTML = disp;
+    let disp = '<ul>';
+    arr.map((v, i) => {
+        disp += '<li>' + v;
+        disp += '<button onclick="hendalremot(' + i + ')">X</button>'
+        disp += '<button onclick="updatremot(' + i + ')">ADD</button>'
+        disp += '</li>'
+    });
+    disp += '</ul>'
+    document.getElementById('todo').innerHTML = disp;
 }
 
 const handelsubmit = () => {
@@ -36,16 +36,16 @@ const handelsubmit = () => {
 }
 
 const handelupdat = (a) => {
-     console.log(a);
+    console.log(a);
 }
 
 
 const handel = () => {
     if (updat) {
         handelupdat();
-    }else {
+    } else {
         handelsubmit();
     }
 }
 
-todof.addEventListener("submit",handel)
+todof.addEventListener("submit", handel)
