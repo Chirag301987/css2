@@ -81,20 +81,21 @@ let data = {
         }
     }
 }
+
+
 for (let i in data) {
-    if (i === "personal_info","branches") {
-        
+    // console.log(data[i]);
+    if (i === 'personal_info') {
         for (let A in data[i]) {
-            
-        
-        console.log(data[i][A]);
-        
-        
-    }
-        
+            console.log(data[i][A]);          
+        }
+    }else if (i==='courses') {
+        for (let B in data[i]) {
+            console.log(data[i][B]);
+        }
     }else {
-        
+        for (let C in data[i]) {
+            // console.log(data[i][C].admission,data[i][C].vacant_seat);       
+        }
     }
-   
-    
 }
