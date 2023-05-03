@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,26 +15,65 @@
             border-radius: 20px;
             text-align: center;
         }
+
         h1 {
             text-align: center;
             color: blue;
             padding-top: 20px;
             font-size: 50px;
         }
+
         #fdata {
             margin: 10px auto;
             border: 1px solid red;
             width: 300px;
             padding: 20px;
         }
+
         #dataex {
             margin: 10px auto;
             border: 1px solid red;
             width: 300px;
             padding: 20px;
         }
+        .output-container {
+            background-color: #587ef4;
+            color: #ffffff;
+            border-radius: 0.3em;
+            margin: 2em 0;
+            padding: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .output-container p {
+            font-weight: 500;
+            margin-bottom: 0.6em;
+        }
+
+        .output-container span {
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            color: #e5e5e5;
+        }
+        .doto {
+            background-color: #ffffff;
+            padding: 1.8em 1.2em;
+            border-radius: 0.6em;
+        }
+        .fdata,
+        .dataex {
+            background-color: #ffffff;
+            padding: 1.25em 0.9em;
+            border-radius: 0.3em;
+           
+        }
+
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>BUDGET APP</h1>
@@ -42,35 +82,39 @@
             <input type="text" name="budget" id="bdata"><br><br>
             <button>Submit</button>
         </form>
-        <div class="balance">
-            <div>
-                <h2>BUDGET</h2>
-                <div id="bu"></div>
-            </div>
-            <div>
-                <h2>EXPENSES</h2>
-                <div id="exp"></div>
-            </div>
-            <div>
-                <h2>BALANCE</h2>
-                <div id="bal"></div>
-            </div>
-        </div>
-        <form action="#" id="dataex">
-            <h2>Please Enter Your Expense</h2>
-            <input type="text" name="exname" id="exname">
-            <h2>Please Enter Expense Amount</h2>
-            <input type="text" name="exda" id="exda">
-            <button>submit</button>
-        </form><br><br>
 
-        <div class="doto">
-      
-            <div id="doto1"></div>
-      
+        <div class="output-container flex-space">
+            <div>
+                <p>Total Budget</p>
+                <span id="amount">0</span>
+            </div>
+            <div>
+                <p>Expenses</p>
+                <span id="expenditure-value">0</span>
+            </div>
+            <div>
+                <p>Balance</p>
+                <span id="balance-amount">0</span>
+            </div>
         </div>
-        
+    </div>
+
+    <form action="#" id="dataex">
+        <h2>Please Enter Your Expense</h2>
+        <input type="text" name="exname" id="exname">
+        <h2>Please Enter Expense Amount</h2>
+        <input type="text" name="exda" id="exda">
+        <button>submit</button>
+    </form><br><br>
+
+    <div class="doto">
+
+        <div id="doto1"></div>
+
+    </div>
+
     </div>
     <script src="js/budget.js"></script>
 </body>
+
 </html>
