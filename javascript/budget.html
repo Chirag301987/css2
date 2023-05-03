@@ -9,8 +9,8 @@
         .container {
             margin: 30px auto;
             width: 500px;
-            height: 500px;
-            background-color: bisque;
+            /* height: 500px; */
+            background-color: rgb(223, 214, 203);
             border-radius: 20px;
             text-align: center;
         }
@@ -21,6 +21,12 @@
             font-size: 50px;
         }
         #fdata {
+            margin: 10px auto;
+            border: 1px solid red;
+            width: 300px;
+            padding: 20px;
+        }
+        #dataex {
             margin: 10px auto;
             border: 1px solid red;
             width: 300px;
@@ -39,24 +45,30 @@
         <div class="balance">
             <div>
                 <h2>BUDGET</h2>
-                <p id="bu"></p>
+                <div id="bu"></div>
             </div>
             <div>
                 <h2>EXPENSES</h2>
-                <p id="exp"></p>
+                <div id="exp"></div>
             </div>
             <div>
                 <h2>BALANCE</h2>
-                <p id="bal"></p>
+                <div id="bal"></div>
             </div>
         </div>
-        <form action="#" id="exdata">
+        <form action="#" id="dataex">
             <h2>Please Enter Your Expense</h2>
             <input type="text" name="exname" id="exname">
             <h2>Please Enter Expense Amount</h2>
-            <input type="text" name="exdata" id="exdata">
+            <input type="text" name="exda" id="exda">
             <button>submit</button>
-        </form>
+        </form><br><br>
+
+        <div class="doto">
+      
+            <div id="doto1"></div>
+      
+        </div>
         
     </div>
     <script src="js/budget.js"></script>
